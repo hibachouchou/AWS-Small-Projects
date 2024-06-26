@@ -1,52 +1,52 @@
 # The Cloud Resume Challenge - AWS
 Welcome to my Cloud Resume Challenge repository! This project is based on the Cloud Resume Challenge, which aims to build a personal resume website using various AWS services and modern web development practices.
 
-# # Project Overview
+## Project Overview
 This project involves the following steps:
 
-# # Certification
+## Certification
 Achieved the AWS Cloud Practitioner certification.
-# # HTML
+## HTML
 Created a resume in HTML.
-# # CSS
+## CSS
 Styled the resume using CSS.
-# # Static Website
+## Static Website
 Deployed the HTML resume on an Amazon S3 static website.
-# # HTTPS
+## HTTPS
 Secured the S3 website URL with HTTPS using Amazon CloudFront.
-# # DNS
+## DNS
 Pointed a custom DNS domain name to the CloudFront distribution.
-# # JavaScript
+## JavaScript
 Added a visitor counter to the resume webpage.
-# # Database
+## Database
 Used Amazon DynamoDB to store and retrieve the visitor count.
-# # API
+## API
 Created an API using AWS API Gateway and Lambda to interact with the DynamoDB database.
-# # Python
+## Python
 Wrote the Lambda function in Python using the boto3 library.
-# # Tests
+## Tests
 Included tests for the Python code.
-# # Infrastructure as Code
+## Infrastructure as Code
 Defined the infrastructure using AWS Serverless Application Model (SAM).
-# # Source Control
+## Source Control
 Managed source code with GitHub repositories for both back-end and front-end.
-# # CI/CD (Back end)
+## CI/CD (Back end)
 Set up GitHub Actions for continuous integration and deployment of the back-end.
-# # CI/CD (Front end)
+## CI/CD (Front end)
 Set up GitHub Actions for continuous integration and deployment of the front-end.
 
-# # Blog Post
+## Blog Post
 Wrote a blog post about the project and linked it in the resume.
 
-# # Project Setup
+## Project Setup
 
-# # Prerequisites
+## Prerequisites
 AWS account
 AWS CLI configured
 SAM CLI installed
 GitHub account
 Domain name registered
 
-# # Steps
+## Steps
 
 ![The Cloud Resume Challenge](project1.jpg)
