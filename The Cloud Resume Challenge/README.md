@@ -1,4 +1,4 @@
-# The Cloud Resume Challenge - AWS 🚀
+#  🚀 The Cloud Resume Challenge - AWS ☁️
 Welcome to my Cloud Resume Challenge repository! This project is based on the Cloud Resume Challenge, which aims to build a personal resume website using various AWS services and modern web development practices.
 
 ## Project Overview
