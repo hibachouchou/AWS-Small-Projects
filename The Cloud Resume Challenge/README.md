@@ -8,15 +8,15 @@ This project involves the following steps:
 Achieved the AWS Cloud Practitioner certification.✅
 
 #### ⚫ HTML
-Created a resume in **HTML**.
+Created a resume in **HTML**. ✅
 #### ⚫ CSS
-Styled the resume using **CSS**.
+Styled the resume using **CSS**. ✅
 #### ⚫ Static Website
-Deployed the HTML resume on an **Amazon S3** static website.
+Deployed the HTML resume on an **Amazon S3** static website. ✅
 #### ⚫ HTTPS
-Secured the S3 website URL with HTTPS using **Amazon CloudFront**.
+Secured the S3 website URL with HTTPS using **Amazon CloudFront**. ✅
 #### ⚫ DNS
-Pointed a custom **DNS domain name** to the CloudFront distribution.
+Pointed a custom **DNS domain name** to the CloudFront distribution. ✅
 #### ⚫ JavaScript
 Added a visitor counter to the resume webpage.
 #### ⚫ Database
