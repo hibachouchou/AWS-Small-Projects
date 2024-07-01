@@ -4,4 +4,4 @@
 
 
 
-![DNS - Route 53](Route53.png)
+![DNS - Route 53](DNS-Route53.png)
