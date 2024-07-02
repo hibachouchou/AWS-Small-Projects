@@ -53,6 +53,32 @@ json :
 
 * Click "Save".
 
+5. Enable CORS Configuration:
+
+* Go to the "Permissions" tab of your S3 bucket.
+* Click on "Cross-origin resource sharing (CORS)".
+* Paste the following CORS configuration:
+jsonn:
+
+``
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]
+``
+* Click "Save" to apply the CORS rules to your bucket.
+
 5. Access Your Static Website:
 
 * Go back to the "Properties" tab.
