@@ -34,6 +34,7 @@ Click "Save changes".
 * Go to the "Permissions" tab of your S3 bucket.
 * Click on "Bucket Policy".
 * Paste the following policy into the editor, replacing your-bucket-name with your actual bucket name:
+
 json :
 
 ``
@@ -58,7 +59,8 @@ json :
 * Go to the "Permissions" tab of your S3 bucket.
 * Click on "Cross-origin resource sharing (CORS)".
 * Paste the following CORS configuration:
-jsonn:
+
+json:
 
 ``
 [
