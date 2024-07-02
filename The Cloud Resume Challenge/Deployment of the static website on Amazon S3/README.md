@@ -79,7 +79,7 @@ jsonn:
 ``
 * Click "Save" to apply the CORS rules to your bucket.
 
-5. Access Your Static Website:
+6. Access Your Static Website:
 
 * Go back to the "Properties" tab.
 * In the "Static website hosting" section, you’ll see the "Endpoint" URL.
