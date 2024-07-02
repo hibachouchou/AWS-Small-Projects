@@ -2,6 +2,6 @@
 
 ## Step-by-Step Guide:
 
+![DNS - Route 53](route53.webp)
 
 
-![DNS - Route 53](DNS-Route53.png)
