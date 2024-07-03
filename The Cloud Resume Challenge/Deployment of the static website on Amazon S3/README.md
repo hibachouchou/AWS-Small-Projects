@@ -7,7 +7,7 @@
 * Log in to the AWS Management Console.
 * Navigate to the S3 service.
 * Click on "Create bucket".
-* Enter a unique bucket name (e.g., my-resume-bucket).
+* Enter a unique bucket name (e.g., hiba-cloud-challenge-resume).
 * Choose the AWS region closest to you.
 * Uncheck the "Block all public access" option to allow public access to your website.
 * Acknowledge that you understand the risks of enabling public access.
@@ -85,6 +85,6 @@ json:
 
 * Go back to the "Properties" tab.
 * In the "Static website hosting" section, you’ll see the "Endpoint" URL.
-* Click on the URL to access your deployed resume website.
+* Click on the URL to access your deployed resume website: http://hiba-cloud-challenge-resume.s3-website-us-east-1.amazonaws.com 
 
 ![Deployment of a static website on Amazon S3](Deployment-of-a-static-website-on-Amazon-S3.png)
