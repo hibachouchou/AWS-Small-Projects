@@ -20,11 +20,11 @@ Pointed a custom **DNS domain name** to the CloudFront distribution. ✅
 #### ⚫ JavaScript
 Added a visitor counter to the resume webpage.
 #### ⚫ Database
-Used **Amazon DynamoDB** to store and retrieve the visitor count.
+Used **Amazon DynamoDB** to store and retrieve the visitor count. ✅
 #### ⚫ API
 Created an API using **AWS API Gateway** and Lambda to interact with the DynamoDB database.
 #### ⚫ Python
-Wrote the **Lambda function** in Python using the boto3 library.
+Wrote the **Lambda function** in Python using the boto3 library. ✅ (I used **Node.js**)
 #### ⚫ Tests
 Included tests for the **Python** code.
 #### ⚫ Infrastructure as Code
