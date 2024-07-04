@@ -18,7 +18,7 @@ Secured the S3 website URL with HTTPS using **Amazon CloudFront**. ✅
 #### ⚫ DNS
 Pointed a custom **DNS domain name** to the CloudFront distribution. ✅
 #### ⚫ JavaScript
-Added a visitor counter to the resume webpage.
+Added a visitor counter to the resume webpage.✅
 #### ⚫ Database
 Used **Amazon DynamoDB** to store and retrieve the visitor count. ✅
 #### ⚫ API
@@ -28,7 +28,7 @@ Wrote the **Lambda function** in Python using the boto3 library. ✅ (I used **N
 #### ⚫ Tests
 Included tests for the **Python** code.
 #### ⚫ Infrastructure as Code
-Defined the infrastructure using **Terraform**.
+Defined the infrastructure using **Terraform**. 
 #### ⚫ Source Control
 Managed source code with **GitHub** repositories for both back-end and front-end.
 #### ⚫ CI/CD (Back end)

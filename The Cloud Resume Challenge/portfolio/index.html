@@ -67,6 +67,8 @@
                     <a class="social-item" href="hibachouchene128@gmail.com"><i class="ti-email"></i></a>
                     <a class="social-item" href="https://x.com/hiba_chouchen"><i class="ti-twitter"></i></a>
                 </div>
+                <br/>
+                <h6 style="color: #F075AA;">Total views : <span style="color: black;" id="views">1</span></h6>
             </div>              
             <div class="img-holder">
                 <img src="assets/imgs/barbie.svg" alt="">
@@ -444,7 +446,30 @@
     <!-- End of page footer -->
 
  <!-- steller js -->
+
+  <!-- script src="assets/js/steller.js" ></script-->
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const counter = document.getElementById("views");
+        async function updateCounter() {
+            try {
+                let response = await fetch("https://dmipo7yu5miy7fantrzixcanya0djmny.lambda-url.us-east-1.on.aws/");
+                if (response.ok) {
+                    let data = await response.json();
+                    counter.innerHTML = data;
+                } else {
+                    console.error('Error fetching the views:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        updateCounter();
+    });
+</script>
 </body>
 </html>
