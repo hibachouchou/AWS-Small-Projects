@@ -6,4 +6,4 @@ This application showcases the power of serverless architecture using AWS Lambda
 
 
 ![Serverless Application Development with AWS](HTTP-API-with-AWS.png)
-
+![HTTP-API-with-AWS](js-feature.png)
