@@ -37,9 +37,7 @@ jobs:
 
       - name: Deploy Lambda function
         run: |
-          zip -r lambda.zip .  
-        # Zip the Lambda function code
+          zip -r lambda.zip .  # Zip the Lambda function code
           aws lambda update-function-code \
             --function-name cloudresume-api \
-            --zip-file fileb://lambda.zip  
-        # Deploy the Lambda function
+            --zip-file fileb://lambda.zip  # Deploy the Lambda function

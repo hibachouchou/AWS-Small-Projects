@@ -21,7 +21,7 @@ frontend/
 
 │   └── workflows/
 
-│       └── deploy.yml        # GitHub Actions workflow file
+│       └── ci-cd-aws-s3.yaml        # GitHub Actions workflow file
 
 │
 ├── index.html                # Main HTML file
