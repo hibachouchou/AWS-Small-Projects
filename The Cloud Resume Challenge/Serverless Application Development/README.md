@@ -199,7 +199,7 @@ This application showcases the power of serverless architecture using AWS Lambda
     }
 
     updateCounter();
-  </script>
+    </script>
     ```
 
 ### 8. Test the API
