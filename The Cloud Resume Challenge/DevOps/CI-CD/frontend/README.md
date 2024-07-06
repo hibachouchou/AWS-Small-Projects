@@ -27,6 +27,7 @@ frontend/
 ├── index.html                # Main HTML file
 
 ├── assets/
+
 │   ├── css/                  # CSS files
 
 │   ├── js/                   # JavaScript files
