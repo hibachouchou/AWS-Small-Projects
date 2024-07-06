@@ -5,7 +5,8 @@ Welcome to my Cloud Resume Challenge repository! This project is based on the Cl
 This project involves the following steps:
 
 ### Certification
-Achieved the AWS Cloud Practitioner certification.✅
+Achieved the AWS Cloud Practitioner certification.✅ 
+🧷https://www.credly.com/badges/b5be843a-c206-4ce1-aebb-00ee2e3e0e73/public_url 
 
 #### ⚫ HTML
 Created a resume in **HTML**. ✅
@@ -32,7 +33,7 @@ Defined the infrastructure using **Terraform**.
 #### ⚫ Source Control
 Managed source code with **GitHub** repositories for the project.
 #### ⚫ CI/CD 
-Set up **GitHub Actions** for continuous integration and deployment of the application.
+Set up **GitHub Actions** for continuous integration and deployment of the application (frontend + backend) ✅
 
 ## Blog Post
 Wrote a blog post about the project and linked it in the resume. 👌🏻

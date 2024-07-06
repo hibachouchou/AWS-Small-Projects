@@ -1,0 +1,45 @@
+name: CI/CD Pipeline - Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main  # This workflow runs whenever there is a push or pull request to / from the main branch
+  pull_request:
+    branches:
+      - main 
+  workflow_dispatch:
+  
+jobs:
+  test_and_deploy:
+    runs-on: windows-latest  # The job runs on the latest version of Windows
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Check out the repository code
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2  # Set up Node.js environment
+        with:
+          node-version: '20'  # Specify the Node.js version
+
+      - name: Install dependencies
+        run: npm install  # Install project dependencies
+
+      - name: Run tests
+        run: npm test  # Run the tests using Jest
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1  # Configure AWS credentials
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}  # Use secret for AWS access key ID
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}  # Use secret for AWS secret access key
+          aws-region: us-east-1 # Specify the AWS region 
+
+      - name: Deploy Lambda function
+        run: |
+          zip -r lambda.zip .  
+        # Zip the Lambda function code
+          aws lambda update-function-code \
+            --function-name cloudresume-api \
+            --zip-file fileb://lambda.zip  
+        # Deploy the Lambda function

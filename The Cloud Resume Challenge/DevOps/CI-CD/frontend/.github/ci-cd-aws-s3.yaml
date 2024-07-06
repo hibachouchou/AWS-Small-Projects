@@ -1,0 +1,29 @@
+name: CI/CD Pipeline - Deploy static website to S3
+
+on:
+  push:
+    branches:
+      - main  # This workflow runs whenever there is a push or pull request to / from the main branch
+  pull_request:
+    branches:
+      - main 
+  workflow_dispatch:
+  
+jobs:
+  hello:
+    runs-on: windows-latest  # The job runs on the latest version of Windows
+    steps:
+    # Step 1: Check out the repository code
+    - name: Checkout code # This action checks out the repository code
+      uses: actions/checkout@v2
+    # Step 2: Configure AWS credentials using secrets
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}  # AWS access key ID
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # AWS secret access key
+        aws-region: ${{ secrets.AWS_REGION }} # AWS region : us-east-1
+    # Step 3: Sync the local files to the S3 bucket
+    - name: Sync files to S3
+      run: aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} --delete # AWS CLI command to sync files to S3 
+      # S3_BUCKET_NAME : hiba-cloud-challenge-resume 
