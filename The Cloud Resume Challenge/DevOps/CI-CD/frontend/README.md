@@ -14,6 +14,7 @@ Before setting up the CI/CD pipeline, ensure you have the following:
 The repository is structured as follows:
 
 frontend/
+
 │
 
 ├── .github/
