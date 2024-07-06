@@ -5,10 +5,10 @@ This part demonstrates how to automate the deployment of a static website to an 
 ### Prerequisites :
 Before setting up the CI/CD pipeline, ensure you have the following:
 
-> An AWS account
-> An S3 bucket configured for static website hosting
-> AWS IAM user with AmazonS3FullAccess permissions
-> GitHub repository with the static website files
+- An AWS account
+- An S3 bucket configured for static website hosting
+- AWS IAM user with AmazonS3FullAccess permissions
+- GitHub repository with the static website files
 
 ### Repository Structure
 The repository is structured as follows:
