@@ -42,8 +42,11 @@ frontend/
 
 bash
 ``
+
 git clone https://github.com/your-username/frontend.git
+
 cd frontend
+
 ``
 
 2. Create an S3 bucket:
@@ -70,6 +73,5 @@ cd frontend
 2. **Checkout Code:** Uses the actions/checkout action to pull the latest code from the repository.
 3. **Configure AWS Credentials:** Uses the aws-actions/configure-aws-credentials action to set up AWS credentials using the secrets stored in GitHub.
 4. **Sync Files to S3:** Uses the AWS CLI to sync the repository files to the S3 bucket.
-
 
 ![GitHub_Actions _for_frontend_deployment](GitHub_Actions_for_frontend_deployment.png)
