@@ -39,12 +39,9 @@ backend/
 1. Clone the repository:
 
 bash
-``
-
-git clone https://github.com/your-username/backend.git
+``git clone https://github.com/your-username/backend.git
 
 cd backend
-
 ``
 
 2. Create an IAM user and obtain credentials:

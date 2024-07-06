@@ -42,11 +42,9 @@ frontend/
 
 bash
 ``
-
 git clone https://github.com/your-username/frontend.git
 
 cd frontend
-
 ``
 
 2. Create an S3 bucket:
