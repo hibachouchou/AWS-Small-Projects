@@ -172,10 +172,34 @@ This application showcases the power of serverless architecture using AWS Lambda
 1. **Update your JavaScript code to interact with the API Gateway:**
 
     ```javascript
-    fetch('https://6j3qnkvxl5.execute-api.us-east-1.amazonaws.com/views')
-      .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error));
+   <script>
+    const counter = document.getElementById("views");
+
+    async function updateCounter() {
+      try {
+        let response = await fetch("https://6j3qnkvxl5.execute-api.us-east-1.amazonaws.com/views", {
+          method: 'GET',
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        console.log("Response: ",response)
+        if (response.ok) {
+          let data = await response.json();
+          console.log('Data:', data);
+          counter.innerHTML = data.views;  // Ensure you're accessing the 'views' property
+        } else {
+          console.error('Error fetching the views:', response.statusText);
+          counter.innerHTML = "Can't load views !";  // Display error message in the counter
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        counter.innerHTML = "Can't load views !";  // Display error message in the counter
+      }
+    }
+
+    updateCounter();
+  </script>
     ```
 
 ### 8. Test the API
