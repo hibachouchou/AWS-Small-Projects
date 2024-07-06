@@ -15,15 +15,23 @@ The repository is structured as follows:
 
 frontend/
 │
+
 ├── .github/
+
 │   └── workflows/
+
 │       └── deploy.yml        # GitHub Actions workflow file
+
 │
 ├── index.html                # Main HTML file
+
 ├── assets/
 │   ├── css/                  # CSS files
+
 │   ├── js/                   # JavaScript files
+
 │   └── images/               # Image files
+
 │
 
 ### Setup Instructions 
