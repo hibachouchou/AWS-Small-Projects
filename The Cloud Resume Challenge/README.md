@@ -1,5 +1,7 @@
 #  🚀 The Cloud Resume Challenge - AWS ☁️
-Welcome to my Cloud Resume Challenge repository! This project is based on the Cloud Resume Challenge, which aims to build a personal resume website using various AWS services and modern web development practices.
+Welcome to my Cloud Resume Challenge repository! This project is based on the Cloud Resume Challenge : 
+🧷https://cloudresumechallenge.dev/docs/the-challenge/aws/ , 
+which aims to build a personal resume website using various AWS services and modern web development practices.
 
 ## Project Overview
 This project involves the following steps:
@@ -27,11 +29,11 @@ Created an API using **AWS API Gateway** and Lambda to interact with the DynamoD
 #### ⚫ Python
 Wrote the **Lambda function** in Python using the boto3 library. ✅ (I used **Node.js**)
 #### ⚫ Tests
-Included tests for the **Python** code.
+Included tests for the **Python** code. ✅
 #### ⚫ Infrastructure as Code
-Defined the infrastructure using **Terraform**. 
+Defined the infrastructure using **Terraform**.  ✅
 #### ⚫ Source Control
-Managed source code with **GitHub** repositories for the project.
+Managed source code with **GitHub** repositories for the project. ✅
 #### ⚫ CI/CD 
 Set up **GitHub Actions** for continuous integration and deployment of the application (frontend + backend) ✅
 
@@ -49,4 +51,4 @@ Wrote a blog post about the project and linked it in the resume. 👌🏻
 
 ## Steps
 
-![The Cloud Resume Challenge](project1.jpg)
+![The Cloud Resume Challenge](project.jpg)
