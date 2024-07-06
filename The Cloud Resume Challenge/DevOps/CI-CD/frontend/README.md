@@ -58,6 +58,7 @@ cd frontend
 4. Add GitHub Secrets:
 * Go to your GitHub repository's Settings > Secrets and variables > Actions.
 * Add the following secrets:
+
   * AWS_ACCESS_KEY_ID
   * AWS_SECRET_ACCESS_KEY
   * AWS_REGION
