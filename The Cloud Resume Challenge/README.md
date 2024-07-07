@@ -38,7 +38,7 @@ Managed source code with **GitHub** repositories for the project. ✅
 Set up **GitHub Actions** for continuous integration and deployment of the application (frontend + backend) ✅
 
 ## Blog Post
-Wrote a blog post about the project and linked it in the resume. 👌🏻
+Wrote a blog post about the project and linked it in the resume: https://medium.com/@hibachouchene128/the-cloud-resume-challenge-aws-92868a7e0d54  👌🏻
 
 ## Project Setup
 
