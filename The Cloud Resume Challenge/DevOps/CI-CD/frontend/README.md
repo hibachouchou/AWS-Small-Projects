@@ -75,4 +75,4 @@ cd frontend
 3. **Configure AWS Credentials:** Uses the aws-actions/configure-aws-credentials action to set up AWS credentials using the secrets stored in GitHub.
 4. **Sync Files to S3:** Uses the AWS CLI to sync the repository files to the S3 bucket.
 
-![GitHub_Actions _for_frontend_deployment](GitHub_Actions_for_frontend_deployment.png)
+![GitHub_Actions _for_frontend_deployment](GitHub_Actions-frontend_deployment.png)

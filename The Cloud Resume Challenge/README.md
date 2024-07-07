@@ -51,4 +51,10 @@ Wrote a blog post about the project and linked it in the resume. 👌🏻
 
 ## Steps
 
-![The Cloud Resume Challenge](project.jpg)
+![The Cloud Resume Challenge](Cloud-Resume-Challenge.png)
+
+
+🧷 https://cloud-challenge-resume.cloud
+
+
+![Project](project.png)
