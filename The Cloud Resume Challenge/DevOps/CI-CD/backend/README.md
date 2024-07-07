@@ -30,7 +30,7 @@ backend/
 
 └── tests/
 
-    └── index.test.js        # Jest test file
+  └── index.test.js        # Jest test file
 
 │
 
