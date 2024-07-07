@@ -1,14 +1,44 @@
-# Copyright 2024 hibac
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#     https://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+provider "aws" {
+  region = var.aws_region
+}
 
+terraform {
+  backend "s3" {
+    bucket = "my-terraform-state-bucket"
+    key    = "terraform/state/terraform.tfstate"
+    region = var.aws_region
+  }
+}
+
+module "s3" {
+  source = "./s3"
+}
+
+module "cloudfront" {
+  source    = "./cloudfront"
+  s3_bucket = module.s3.bucket_id
+}
+
+module "route53" {
+  source                 = "./route53"
+  cloudfront_domain_name = module.cloudfront.domain_name
+  cloudfront_zone_id     = module.cloudfront.hosted_zone_id
+}
+
+module "dynamodb" {
+  source = "./dynamodb"
+}
+
+module "iam" {
+  source = "./iam"
+}
+
+module "lambda" {
+  source  = "./lambda"
+  role_arn = module.iam.lambda_role_arn
+}
+
+module "api_gateway" {
+  source              = "./api_gateway"
+  lambda_function_arn = module.lambda.function_arn
+}

@@ -1,14 +1,29 @@
-# Copyright 2024 hibac
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#     https://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+output "bucket_id" {
+  description = "The ID of the S3 bucket created for resume"
+  value       = module.s3.bucket_id
+}
 
+output "website_url" {
+  description = "The URL of the CloudFront distribution"
+  value       = module.cloudfront.domain_name
+}
+
+output "lambda_function_arn" {
+  description = "The ARN of the Lambda function"
+  value       = module.lambda.function_arn
+}
+
+output "lambda_role_arn" {
+  description = "The ARN of the IAM role for Lambda execution"
+  value       = module.iam.lambda_role_arn
+}
+
+output "cloudfront_domain_name" {
+  description = "The domain name of the CloudFront distribution"
+  value       = module.cloudfront.domain_name
+}
+
+output "cloudfront_zone_id" {
+  description = "The zone ID of the CloudFront distribution"
+  value       = module.cloudfront.hosted_zone_id
+}

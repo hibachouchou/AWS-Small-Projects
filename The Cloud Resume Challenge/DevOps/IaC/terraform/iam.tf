@@ -1,14 +1,42 @@
-# Copyright 2024 hibac
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#     https://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+resource "aws_iam_role" "lambda_exec" {
+  name = "lambda_exec_role"
 
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [{
+      Action    = "sts:AssumeRole",
+      Principal = {
+        Service = "lambda.amazonaws.com"
+      },
+      Effect = "Allow",
+      Sid    = ""
+    }]
+  })
+}
+
+resource "aws_iam_role_policy" "lambda_policy" {
+  name   = "lambda_policy"
+  role   = aws_iam_role.lambda_exec.id
+  policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Action = [
+          "dynamodb:PutItem",
+          "dynamodb:GetItem"
+        ],
+        Effect   = "Allow",
+        Resource = var.dynamodb_table_arn
+      },
+      {
+        Action = [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ],
+        Effect   = "Allow",
+        Resource = "arn:aws:logs:*:*:*"
+      }
+    ]
+  })
+}

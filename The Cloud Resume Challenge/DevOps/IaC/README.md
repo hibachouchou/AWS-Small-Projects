@@ -10,4 +10,39 @@ For our Cloud Resume Challenge, using Terraform for Infrastructure as Code (IaC)
 * **AWS Lambda:** Create Lambda functions to interact with DynamoDB and handle API requests.
 * **IAM Roles and Policies:** Define IAM roles and policies to grant necessary permissions to your Lambda functions and other resources.
 
+## Directory Structure
+
+terraform/
+
+├── main.tf
+
+├── variables.tf
+
+├── outputs.tf
+
+├── s3.tf
+
+├── cloudfront.tf
+
+├── route53.tf
+
+├── dynamodb.tf
+
+├── api_gateway.tf
+
+├── lambda.tf
+
+├── iam.tf
+
+### Running Terraform
+To deploy the infrastructure, navigate to the directory containing your main.tf file and run the following commands:
+
+  ```bash
+
+terraform init
+terraform plan
+terraform apply
+
+ ```
+
 ![Terraform to Manage AWS Programmable Infrastructures](Terraform-AWS.png)
